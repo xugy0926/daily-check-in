@@ -10,7 +10,4 @@
     </view>
   </block>
   </view>
-  <view class="footer">
-    <navigator url="../event/event">添加</navigator>
-  </view>
 </view>
