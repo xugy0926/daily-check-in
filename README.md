@@ -28,7 +28,7 @@ git clone https://github.com/xugy0926/daily-check-in.git
 
 ```
 AV.init({
-  appId: 'xxxxxxxxxx',
+  appId: 'xxxxxxxxxx',
   appKey: 'xxxxxxxxxx',
 });
 ```
