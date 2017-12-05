@@ -11,5 +11,27 @@
     "navigationBarBackgroundColor": "#fbfbfb",
     "navigationBarTitleText": "打卡",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/todos/todos",
+        "text": "记录",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/event/event",
+        "text": "新建",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add-selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-selected.png"
+      }
+    ]
   }
 }
