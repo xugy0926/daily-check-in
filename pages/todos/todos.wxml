@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="weui-panel__bd">
+  <block wx:for="{{todos}}" wx:for-item="todo" wx:key="objectId">
+    <view 
+      class="weui-media-box weui-media-box_text" 
+      wx:if="{{todo.objectId != editedTodo.objectId}}"
+      data-id="{{todo.objectId}}">
+      <view class="weui-media-box__title weui-media-box__title_in-text">{{todo.title}}</view>
+      <view class="weui-media-box__desc">{{todo.content}}</view>
+    </view>
+  </block>
+  </view>
+  <view class="footer">
+    <navigator url="../event/event">添加</navigator>
+  </view>
+</view>
