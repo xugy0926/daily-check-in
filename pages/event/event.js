@@ -67,15 +67,18 @@ Page({
       .setACL(acl)
       .save()
       .then(todo => {
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 3000
-        });
+        wx.switchTab({
+          url: '../home/home'
+        })
       })
       .catch(console.error);
     this.setData({
       draft: ''
     });
+  },
+  onPullDownRefresh: function () {
+    setTimeout(() => {
+      wx.stopPullDownRefresh();
+    }, 100)
   }
 });

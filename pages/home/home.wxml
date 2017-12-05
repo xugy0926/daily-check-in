@@ -1,4 +1,13 @@
 <view class="container">
+  <view class="page__hd">
+    <view class="page__title">打一卡</view>
+    <view class="page__desc">如果你只能培养一个习惯，请培养打卡的习惯，因为它是培养习惯的习惯，是坚持做到某事的最重要技巧。原则上来说，应该在发生行为的第一时间就打卡记录。</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <navigator url="../event/event">
+      <button class="weui-btn" type="default">记录成长的点滴</button>
+    </navigator>
+  </view>
   <view class="page__bd page__bd_spacing">
     <view class="kind-list">
       <block wx:for="{{todos}}" wx:for-item="todo" wx:key="objectId">

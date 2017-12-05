@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/home/home",    
     "pages/todos/todos",
     "pages/event/event",
     "pages/user/user"
@@ -15,16 +16,16 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/todos/todos",
-        "text": "记录",
+        "pagePath": "pages/home/home",
+        "text": "打卡",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-selected.png"
       },
       {
-        "pagePath": "pages/event/event",
-        "text": "新建",
-        "iconPath": "images/add.png",
-        "selectedIconPath": "images/add-selected.png"
+        "pagePath": "pages/todos/todos",
+        "text": "记录",
+        "iconPath": "images/order-fill.png",
+        "selectedIconPath": "images/order-fill-selected.png"
       },
       {
         "pagePath": "pages/user/user",

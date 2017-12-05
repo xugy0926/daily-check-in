@@ -39,12 +39,15 @@ Page({
     }
   },
   getUserInfo: function (e) {
-    console.log('-----');
-    console.log(e)
-    app.globalData.userInfo = e.detail.rawData
+    app.globalData.userInfo = e.detail.userInfo
     this.setData({
-      userInfo: e.detail.rawData,
+      userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onPullDownRefresh: function () {
+    setTimeout(() => {
+      wx.stopPullDownRefresh();
+    }, 100)
   }
 })
