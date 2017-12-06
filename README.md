@@ -10,11 +10,11 @@
 
 2. 注册 leancloud 
 
-注册地址 https://leancloud.cn
+ https://leancloud.cn
 
-3. zai leancloud 创建一个应用
+3. 在 leancloud 创建一个应用
 
-开发版本即可。
+开发版本即可（免费）。
 
 4. 下载 daily-check-in 项目
 
@@ -35,10 +35,13 @@ AV.init({
 
 6. 将 小程序的 id 填入到 leancloud 新项目中。
 
-在 leancloud 进入到你创建的项目中。
+先在 leancloud 中进入到你创建的项目中，选择 **组件** -> **社交**, 在 微信小程序菜单那填入你的小程序的 ID 和 Secret Key。
 
-选择 **组件** -> **社交**, 在 微信小程序菜单那填入你的小程序的 ID 和 Secret Key。
-
-8. 用微信开发者工具导入项目
+7. 用微信开发者工具导入项目
 8. 运行项目
 
+# 开发资源
+
+1. [leancloud](https://leancloud.cn)
+2. [WeUI](https://github.com/weui/weui-wxss)
+3. [iconfont](http://www.iconfont.cn/)

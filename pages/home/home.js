@@ -42,7 +42,6 @@ Page({
     this.unbind();
   },
   setTodos: function(todos) {
-    console.log(todos);
     const activeTodos = todos.filter(todo => !todo.done);
     this.setData({
       todos,
@@ -54,8 +53,6 @@ Page({
     // TODO:
   },
   onPullDownRefresh: function () {
-    setTimeout(() => {
-      wx.stopPullDownRefresh();
-    }, 100)
+    wx.stopPullDownRefresh();
   }
 });

@@ -45,14 +45,11 @@ Page({
     const user = AV.User.current();
     if (!user) return wx.stopPullDownRefresh();
     this.fetchTodos(user)
-      .catch(error => consolo.error(error.message))
-      .then(wx.stopPullDownRefresh);
+    wx.stopPullDownRefresh()
   },
   setTodos: function(todos) {
-    const activeTodos = todos.filter(todo => !todo.done);
     this.setData({
-      todos,
-      activeTodos
+      todos
     });
     return todos;
   },

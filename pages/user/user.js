@@ -46,8 +46,6 @@ Page({
     })
   },
   onPullDownRefresh: function () {
-    setTimeout(() => {
-      wx.stopPullDownRefresh();
-    }, 100)
+    wx.stopPullDownRefresh();
   }
 })
